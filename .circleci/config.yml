@@ -8,7 +8,7 @@ workflows:
 
   smoke_test:
     jobs:
-      - node-orb/bundle-update-pr
+      - node-orb/ci-yarn-upgrade
 
   nightly:
     triggers:
@@ -19,4 +19,4 @@ workflows:
               only: master
 
     jobs:
-      - node-orb/bundle-update-pr
+      - node-orb/ci-yarn-upgrade
