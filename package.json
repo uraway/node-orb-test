@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-confirm-decorator": "^0.1.2"
+  }
+}

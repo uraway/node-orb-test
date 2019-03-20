@@ -1,0 +1,22 @@
+version: 2.1
+
+orbs:
+  node-orb: uraway/node-orb@volatile
+
+workflows:
+  version: 2
+
+  smoke_test:
+    jobs:
+      - node-orb/bundle-update-pr
+
+  nightly:
+    triggers:
+      - schedule:
+          cron: "00 10 * * 5"
+          filters:
+            branches:
+              only: master
+
+    jobs:
+      - node-orb/bundle-update-pr
