@@ -1,7 +1,7 @@
 version: 2.1
 
 orbs:
-  node-orb: uraway/node-orb@volatile
+  node-orb: uraway/node-orb@dev:ab0f5b59a9cb1779d518e5b87e0eb388d2dfe4da
 
 workflows:
   version: 2
